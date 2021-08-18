@@ -2,13 +2,14 @@
 window.addEventListener("load", function() {
     const form = document.getElementById("launchForm");
     form.addEventListener('submit', (e) => {
-        const list = '';
+        e.preventDefault();
         const pilot = form.querySelector('input[name="pilotName"]').value;
         const copilot = form.querySelector('input[name="copilotName"]').value;
         const fuelLevel = form.querySelector('input[name="fuelLevel"]').value;
         const cargoMass = form.querySelector('input[name="cargoMass"]').value;
-        formSubmission(document,list,pilot,copilot,fuelLevel,cargoMass);
-        e.preventDefault();
+        // const list = [pilot, copilot, fuelLevel, cargoMass];
+
+        formSubmission(document,'',pilot,copilot,fuelLevel,cargoMass);        
     });
     
 
