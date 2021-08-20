@@ -33,6 +33,6 @@ window.addEventListener("load", function() {
             destination.moons,
             destination.image
         );
-    })
+    });
 
 });
