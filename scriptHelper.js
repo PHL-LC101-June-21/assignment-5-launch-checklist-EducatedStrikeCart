@@ -39,13 +39,12 @@ function validateInput(testInput) { //This function is pointless but texbook wan
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-    const faultyItems = document.getElementById("faultyItems");
     const launchStatus = document.getElementById("launchStatus");
 
     if (pilot === '' || copilot === '' || fuelLevel === '' || cargoLevel === '') {
         alert("All fields must be filled!");
     } else {
-        faultyItems.style.visibility = "visible";
+        list.style.visibility = "visible";
     }
 
     let pilotStatus = document.getElementById("pilotStatus");
