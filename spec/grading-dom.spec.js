@@ -53,6 +53,9 @@ describe ("GRADING DOM MANIPULATION TEST: ", function () {
 
    it ("Launch CheckList is ready to go", function() {
       // Check page before form submission to make sure everything is working
+      console.log(list.style.visibility)
+      console.log()
+      console.log(list.style)
      expect(list.style.visibility).toEqual("hidden"); 
      expect(pilotStatus.textContent).toEqual("Pilot Ready");
       expect(copilotStatus.textContent).toEqual("Co-pilot Ready");
